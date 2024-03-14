@@ -4,7 +4,7 @@
 
 	// i didnt write this idk
 	let getAge = () => {
-		let birthDate = new Date('2007/03/24');
+		let birthDate = new Date('2008/08/23');
 		const ageMs = Date.now() - birthDate.getTime();
 		const preciseAge = (ageMs / 31536000000).toFixed(10);
 		return preciseAge;
@@ -23,19 +23,10 @@
 	<div class="text">
 		<h2>bio</h2>
 		<p>
-			Hey there, I'm afn! :] I'm a <Tooltip tip={age}
+			Hey there, I'm cao :] I'm a <Tooltip tip={age}
 				><span>{Math.floor(Number(age))}</span></Tooltip
 			>
-			year old digital artist and graphic/UI designer based in Canada. I’ve taken art seriously since
-			<span>2017</span>, and have been doodling silly anime characters since <span>2020</span>.
-			Recently, however, I’ve grown a knack for programming. I like contributing to
-			<Tooltip tip="🤓">
-				<a href="https://github.com/xafn" target="_blank" rel="noreferrer">
-					<span>open source</span>
-				</a>
-			</Tooltip>
-			as a web developer, which is probably the reason why you've ended up here. Currently struggling
-			with Svelte and Typescript.
+			year old digital artist.
 		</p>
 	</div>
 </section>
